@@ -44,5 +44,6 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 	$router->get('/detailTransaksi/{id}', 'TransaksiController@detail');
 	$router->get('/deleteTransaksi/{id}', 'TransaksiController@delete');
 
+	$router->get('/getLaporan', 'LaporanController@get');
 
 });
